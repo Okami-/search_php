@@ -34,7 +34,7 @@ function get_db_connection() {
 			}
 		}
 		
-		$results = "SELECT `variable`, `label`, `type`, `observedn`, `missingn` FROM `heartandsoul` WHERE $where";
+		$results = "SELECT `variable`, `label`, `type`, `observedn`, `missingn` FROM `#` WHERE $where";
 		
 		$results_num = ($results = mysql_query($results)) ? mysql_num_rows($results) : 0;
 		
